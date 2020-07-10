@@ -7,12 +7,15 @@ using System.Web.Http;
 
 namespace back.Controllers
 {
-    public class ValuesController : ApiController
+
+    public class TasksController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        [HttpGet]
+        [Route("~/Api/Tasks")]
+        public IHttpActionResultdsadsa GetAllTasks()
         {
-            return new string[] { "value1", "value2" };
+
+            return ok(dsad)
         }
 
         // GET api/values/5
