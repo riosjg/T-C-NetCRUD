@@ -36,6 +36,11 @@ namespace back.Repository
             db.SaveChanges();
         }
 
+        public void ModifyTask(Task task)
+        {
+            var query = db.Tasks.Find(task.Id);
+        }
+
 
     }
 }

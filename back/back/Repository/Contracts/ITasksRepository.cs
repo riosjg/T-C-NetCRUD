@@ -9,6 +9,7 @@ namespace back.Repository.Contracts
 {
     public interface ITasksRepository
     {
-        //List<Task> GetAllTasks();
+        List<Task> GetAllTasks();
+
     }
 }
